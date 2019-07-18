@@ -29,6 +29,37 @@ for (var i = 3; i < query.length; i++) {
 array.splice(-1); //Get rid of last plus sign, if left errors caused
 var finalSearch = array.join(""); //Search query joined together to form string for any query below
 
+
+
+// node liri.js spotify-this-song
+
+function spotifyIt() {
+
+    if (finalSearch === "") {
+        finalSearch = "ace+of+base+the+sign"
+    }
+
+    spotify.search({
+        type: 'artist,track',
+        query: finalSearch
+    }, function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+        console.log('\n')
+
+        var currData = `\n
+    Artist: ${data.tracks.items[0].artists[0].name}
+    Track: ${data.tracks.items[0].name}
+    Preview: ${data.tracks.items[0].preview_url}
+    Album: ${data.tracks.items[0].album.name}
+            `
+            console.log(currData)
+            dataLog(currData)
+
+    });
+}
+
 // node liri.js concert-this
 
 function concertMe() {
@@ -59,32 +90,32 @@ function concertMe() {
     }
 }
 
-// node liri.js spotify-this-song
+// node liri.js movie-this
 
-function spotifyIt() {
+function movieThis() {
 
     if (finalSearch === "") {
-        finalSearch = "ace+of+base+the+sign"
+        finalSearch = "mr+nobody"
     }
 
-    spotify.search({
-        type: 'artist,track',
-        query: finalSearch
-    }, function (err, data) {
-        if (err) {
-            return console.log('Error occurred: ' + err);
-        }
-        console.log('\n')
-
-        var currData = `\n
-    Artist: ${data.tracks.items[0].artists[0].name}
-    Track: ${data.tracks.items[0].name}
-    Preview: ${data.tracks.items[0].preview_url}
-    Album: ${data.tracks.items[0].album.name}
+    axios.get("http://www.omdbapi.com/?t=" + finalSearch + "&y=&plot=short&apikey=trilogy").then(
+        function (response) {
+        
+            var currData = `\n
+    Title: ${response.data.Title}
+    Released: ${response.data.Year}
+    IMDB Rating: ${response.data.imdbRating}
+    Rotten Tomatos Rating: ${response.data.Ratings[1].Value}
+    Country: ${response.data.Country}
+    Language: ${response.data.Language}
+    Plot: ${response.data.Plot}
+    Actors: ${response.data.Actors}
             `
             console.log(currData)
             dataLog(currData)
+        }
+    );
 
-    });
+    
 }
 
