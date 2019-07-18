@@ -1,0 +1,40 @@
+
+concert-this usher
+undefined
+concert-this Ed Sherren
+undefined
+concert-this Brandy
+
+
+    Venue: The Pavilion at Toyota Music Factory
+    Location: Irving, CA
+    Event Date: October 17, 2019
+            
+spotify-this-song
+
+
+    Artist: Pantones
+    Track: The Sign - Ace Of Base Cover
+    Preview: https://p.scdn.co/mp3-preview/b776967c99853086b23b79ae3c83db64a4b2cfda?cid=e51515dd49ae49df98a2ff0bdf500169
+    Album: ¿Quién Quiere Primavera ?
+            
+spotify-this-song Ironic
+
+
+    Artist: Alanis Morissette
+    Track: Ironic
+    Preview: https://p.scdn.co/mp3-preview/457d1a134a7a8174f5fa52f2d2b82c6927acb7aa?cid=e51515dd49ae49df98a2ff0bdf500169
+    Album: Jagged Little Pill
+            
+movie-this Die Hard
+
+
+    Title: Die Hard
+    Released: 1988
+    IMDB Rating: 8.2
+    Rotten Tomatos Rating: 93%
+    Country: USA
+    Language: English, German, Italian, Japanese
+    Plot: An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.
+    Actors: Bruce Willis, Bonnie Bedelia, Reginald VelJohnson, Paul Gleason
+            
