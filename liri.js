@@ -3,7 +3,8 @@ require("dotenv").config();
 var axios = require("axios");
 var moment = require("moment");
 var fs = require("fs");
-
+// const log = console.log;
+// log("hello world")
 //Spotify keys
 const env = process.env;
 
@@ -15,20 +16,37 @@ var spotify = new Spotify({
 });
 
 
-//Input on CLI
+//CL input
 var query = process.argv;
 var type = process.argv[2];
 var array = [];
 
-//Loop through and join name of arguments after file name
+//join name of arguments after name
 for (var i = 3; i < query.length; i++) {
     array.push(query[i]);
     array.push("+")
 }
 
-array.splice(-1); //Get rid of last plus sign, if left errors caused
+array.splice(-1); //plus sign error fix
 var finalSearch = array.join(""); //Search query joined together to form string for any query below
 
+//Googled switch statement to determine argument type (concert-this, movie-this, etc.)
+switch (type) {
+    case 'concert-this':
+        concertMe()
+        break;
+    case 'spotify-this-song':
+        spotifyIt()
+        break;
+    case 'movie-this':
+        movieThis()
+        break;
+    case 'do-what-it-says':
+        itSays()
+        break;
+    default:
+        console.log("No type value found");
+}
 
 
 // node liri.js spotify-this-song
@@ -119,3 +137,48 @@ function movieThis() {
     
 }
 
+// node liri.js do-what-it-says
+
+function itSays() {
+    fs.readFile("random.txt", "utf8", function(error, data) {
+
+        if (error) {
+          return console.log(error);
+        }
+
+        var dataArr = data.split(",");
+      
+        finalSearch = dataArr[1];
+        spotifyIt()
+      });
+}
+
+//saves user input to log.txt
+
+var logQuery = query.splice(0,2)
+logQuery =  "\n" + query.join(" ") + "\n"
+console.log(logQuery)
+
+fs.appendFile("log.txt", logQuery, function(err) {
+
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Log Updated");
+    }
+  
+  });
+
+//saves user imput result to log.txt
+
+function dataLog(data) {
+    fs.appendFile("log.txt", data, function(err) {
+
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Log Updated");
+        }
+      
+      });
+  }

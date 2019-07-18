@@ -38,3 +38,29 @@ movie-this Die Hard
     Plot: An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.
     Actors: Bruce Willis, Bonnie Bedelia, Reginald VelJohnson, Paul Gleason
             
+movie-this Ben-Hur
+
+
+    Title: Ben-Hur
+    Released: 1959
+    IMDB Rating: 8.1
+    Rotten Tomatos Rating: 87%
+    Country: USA
+    Language: English
+    Plot: When a Jewish prince is betrayed and sent into slavery by a Roman friend, he regains his freedom and comes back for revenge.
+    Actors: Charlton Heston, Jack Hawkins, Haya Harareet, Stephen Boyd
+            
+
+
+movie-this Metro
+
+
+    Title: Metro
+    Released: 1997
+    IMDB Rating: 5.5
+    Rotten Tomatos Rating: 15%
+    Country: USA
+    Language: English
+    Plot: A Hostage Negotiator teams up with a Sharpshooter to bring down a dangerous jewel thief.
+    Actors: Eddie Murphy, Kim Miyori, Art Evans, James Carpenter
+            
