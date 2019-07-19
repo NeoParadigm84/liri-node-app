@@ -11,6 +11,15 @@ MOMENT
 You will need to get your own Spotify API key and creat your own dotenv file to run this programe.
 
 ## APP Walkthrough
+
+*WATCH A VIDEO TO SEE HOW IT WORKS!*
+
+https://drive.google.com/file/d/1Ry_OnqNLg7awpfFjS4r-NioVok8ghT2e/view?usp=sharing
+
+*OR*
+
+*Check out the walk through below*
+
 Runing the app with no command give user overview and command instructions:
 ![start](https://user-images.githubusercontent.com/47481328/61503252-15af0380-a9a5-11e9-8872-5211da7f7cab.jpg)
 
