@@ -49,3 +49,7 @@ Bonous command below. Enter and see what it does:
 This provide results from default text file:
 ![do result](https://user-images.githubusercontent.com/47481328/61502908-cae0bc00-a9a3-11e9-8d70-083a00df65f7.jpg)
 
+
+
+The User commands and results are all appended to a txt document:
+![txt1](https://user-images.githubusercontent.com/47481328/61503623-7d198300-a9a6-11e9-82b7-9a2b8b55008c.jpg)
