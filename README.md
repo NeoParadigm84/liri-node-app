@@ -52,4 +52,4 @@ This provide results from default text file:
 
 
 The User commands and results are all appended to a txt document:
-![txt1](https://user-images.githubusercontent.com/47481328/61503623-7d198300-a9a6-11e9-82b7-9a2b8b55008c.jpg)
+![txt1](https://user-images.githubusercontent.com/47481328/61503737-dd102980-a9a6-11e9-8eb8-630ed9091c97.jpg)
