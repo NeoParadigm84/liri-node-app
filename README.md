@@ -2,10 +2,10 @@
 LIRI is a command line node app that takes in parameters and gives you back data. This app uses axios to retrieve data from Bands in Town, OMDB and Spotify.
 
 ## Dependencies
-AXIOS
-CHALK
-DOTENV
-SPOTIFY
+AXIOS,
+CHALK,
+DOTENV,
+SPOTIFY,
 MOMENT
 
 You will need to get your own Spotify API key and creat your own dotenv file to run this programe.
